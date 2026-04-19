@@ -1,0 +1,25 @@
+{
+  "name": "enescaakir-plugins",
+  "owner": {
+    "name": "Enes Cakir"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by Enes Cakir"
+  },
+  "plugins": [
+    {
+      "name": "notify",
+      "source": "./",
+      "description": "Windows toast notifications and sound effects for Claude Code. Notifies on permission requests and task completion.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Enes Cakir"
+      },
+      "homepage": "https://github.com/enescaakir/notify",
+      "repository": "https://github.com/enescaakir/notify",
+      "license": "MIT",
+      "keywords": ["windows", "notification", "toast", "audio", "hooks"],
+      "category": "productivity"
+    }
+  ]
+}
