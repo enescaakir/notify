@@ -24,10 +24,15 @@ If the tool is auto-approved, `PostToolUse` removes the marker before the 3s win
 
 - Windows (uses WPF + Windows toast APIs)
 - [BurntToast](https://github.com/Windos/BurntToast) PowerShell module
+- Windows notifications enabled, Do Not Disturb off
 
 ```powershell
 Install-Module BurntToast -Scope CurrentUser
 ```
+
+> **Note:** Toasts won't appear if notifications are blocked or Do Not Disturb is active.
+> Enable via **Settings → System → Notifications** — turn on notifications for PowerShell,
+> and disable Do Not Disturb (Focus assist).
 
 ## Installation
 
