@@ -1,0 +1,8 @@
+{
+  "name": "notify",
+  "version": "0.1.0",
+  "description": "Windows toast notifications and sound effects for Claude Code. Notifies on permission requests and task completion.",
+  "author": {
+    "name": "Enes Cakir"
+  }
+}
