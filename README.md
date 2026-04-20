@@ -24,6 +24,8 @@ Claude Code plugin for Windows — fires toast notifications and audio on permis
 
 If the tool is auto-approved, `PostToolUse` removes the marker before the 3s window expires → no notification. If the tool needs user permission, the user sees the prompt while the 3s passes → toast fires.
 
+> **Note:** The terminal Claude Code CLI exposes a native permission prompt event, making direct detection straightforward. The VS Code chat extension does not — so this plugin uses the `PreToolUse` / `PostToolUse` marker-file approach as a workaround to detect when a permission prompt is actually shown.
+
 ## Requirements
 
 - Windows (uses WPF + Windows toast APIs)
