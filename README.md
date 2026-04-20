@@ -36,7 +36,50 @@ Install-Module BurntToast -Scope CurrentUser
 
 ## Installation
 
-Install via Claude Code plugin manager, or copy this folder into your plugins directory. The plugin harness resolves `${CLAUDE_PLUGIN_ROOT}` automatically.
+### 1. Install BurntToast
+
+Open PowerShell as current user and run:
+
+```powershell
+Install-Module BurntToast -Scope CurrentUser
+```
+
+### 2. Enable Windows Notifications
+
+- **Settings → System → Notifications** — turn on for PowerShell
+- Disable **Do Not Disturb / Focus Assist**
+
+### 3. Install the Plugin
+
+`notify` is not in the official Claude Code marketplace. First add the marketplace, then install.
+
+**Step 1 — Add marketplace:**
+
+```powershell
+claude plugin marketplace add enescaakir/notify
+```
+
+**Step 2 — Install plugin:**
+
+```powershell
+claude plugin install notify
+```
+
+> If you have multiple marketplaces configured and name conflicts, use `notify@enescaakir-plugins` to target this marketplace specifically.
+
+**Option B — Manual:**
+
+1. Clone or download this repo
+2. Copy the folder to your plugins directory (e.g. `%APPDATA%\Claude\plugins\notify\`)
+3. Run:
+
+```powershell
+claude plugin install --path "%APPDATA%\Claude\plugins\notify"
+```
+
+### 4. Verify
+
+Run any Claude Code command that requires permission. You should hear a sound and see a Windows toast within 3 seconds of the permission prompt appearing.
 
 ## Customization
 
