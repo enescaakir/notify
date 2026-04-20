@@ -1,5 +1,9 @@
 # notify
 
+<p align="center">
+  <img src="banner.png" width="380" alt="notify preview" />
+</p>
+
 Claude Code plugin for Windows — fires toast notifications and audio on permission requests and task completion.
 
 ## Events
